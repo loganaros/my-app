@@ -1,7 +1,9 @@
 export default function Post() {
     return (
-        <div>
-            <ProfileInfo className="header" />
+        <div className="flex">
+            <div>
+                <ProfileInfo className="header" />
+            </div>
             <PostContent />
             <InteractionOptions />
         </div>
@@ -10,10 +12,12 @@ export default function Post() {
 
 function ProfileInfo() {
     return (
-        <div>
-            <img className="profilepic" />
-            <h1>Username</h1>
-            <h2>@username</h2>
+        <div className="flex">
+            <img src="className="profilepic" />
+            <div>
+                <h1>Username</h1>
+                <h2>@username</h2>
+            </div>
         </div>
     );
 }
