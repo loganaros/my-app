@@ -1,7 +1,14 @@
-import Image from 'next/image'
+import Post from "./components/Post.js";
 
 export default function Home() {
+  const handleClick = () => {
+    <Post />
+  };
+
   return (
-    <p>Logan</p>
-  )
+    <main>
+      <Post />
+      <button onClick={handleClick} />
+    </main>
+  );
 }
